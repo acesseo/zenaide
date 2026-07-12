@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Revisão Bancária | Zenaide Assis</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Montserrat',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#1d1038;
+color:white;
+overflow-x:hidden;
+}
+
+.hero{
+position:relative;
+min-height:100vh;
+background:
+linear-gradient(
+135deg,
+#241046 0%,
+#2f1459 45%,
+#1d1038 100%
+);
+overflow:hidden;
+}
+
+.hero::before{
+content:'';
+position:absolute;
+inset:0;
+background:
+radial-gradient(circle at left center,
+rgba(255,255,255,.08),
+transparent 50%);
+}
+
+.container{
+position:relative;
+z-index:2;
+max-width:1200px;
+margin:auto;
+padding:60px 25px;
+}
+
+.content{
+width:55%;
+position:relative;
+z-index:3;
+}
+
+h1{
+font-size:5rem;
+font-weight:800;
+line-height:0.95;
+margin-bottom:30px;
+text-transform:uppercase;
+}
+
+.subtitle{
+font-size:1.2rem;
+line-height:1.8;
+color:#e3d9ff;
+margin-bottom:20px;
+}
+
+.benefits{
+margin-top:30px;
+margin-bottom:35px;
+}
+
+.benefits p{
+margin-bottom:12px;
+font-size:1.1rem;
+}
+
+.btn{
+display:inline-block;
+padding:18px 35px;
+background:#25D366;
+color:white;
+text-decoration:none;
+font-weight:700;
+border-radius:60px;
+font-size:1rem;
+transition:.3s;
+box-shadow:0 0 25px rgba(37,211,102,.4);
+animation:pulse 2s infinite;
+}
+
+.btn:hover{
+transform:translateY(-4px);
+}
+
+@keyframes pulse{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.04);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+.person{
+position:absolute;
+right:-60px;
+bottom:0;
+height:92%;
+z-index:1;
+pointer-events:none;
+}
+
+.person img{
+height:100%;
+width:auto;
+object-fit:contain;
+}
+
+.cards{
+background:#170b2c;
+padding:80px 20px;
+}
+
+.cards-grid{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+.card{
+background:#261248;
+padding:25px;
+border-radius:20px;
+border:1px solid rgba(255,255,255,.08);
+}
+
+.card h3{
+color:#d7b3ff;
+margin-bottom:15px;
+}
+
+.cta{
+padding:80px 25px;
+text-align:center;
+background:#120821;
+}
+
+.cta h2{
+font-size:2.5rem;
+margin-bottom:20px;
+}
+
+.cta p{
+max-width:700px;
+margin:auto;
+margin-bottom:30px;
+line-height:1.8;
+}
+
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+width:70px;
+height:70px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:32px;
+text-decoration:none;
+color:white;
+box-shadow:0 0 25px rgba(37,211,102,.5);
+z-index:999;
+}
+
+footer{
+padding:25px;
+text-align:center;
+background:#0d0619;
+}
+
+@media(max-width:991px){
+
+.hero{
+min-height:920px;
+}
+
+.content{
+width:100%;
+max-width:300px;
+}
+
+h1{
+font-size:3.4rem;
+line-height:1;
+}
+
+.subtitle{
+font-size:1rem;
+}
+
+.person{
+height:65%;
+right:-70px;
+bottom:0;
+opacity:.95;
+}
+
+.cards-grid{
+grid-template-columns:1fr;
+}
+
+.cta h2{
+font-size:2rem;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<section class="hero">
+
+<div class="container">
+
+<div class="content">
+
+<h1>
+ESTÁ PAGANDO<br>
+JUROS ABUSIVOS<br>
+SEM SABER?
+</h1>
+
+<p class="subtitle">
+Nós analisamos seu contrato e mostramos onde você pode economizar
+(ou até recuperar dinheiro).
+</p>
+
+<p class="subtitle">
+Revisão Bancária com análise técnica e segura.
+</p>
+
+<div class="benefits">
+<p>✓ Financiamentos</p>
+<p>✓ Empréstimos</p>
+<p>✓ Contratos Bancários</p>
+<p>✓ Atendimento Especializado</p>
+</div>
+
+<a class="btn"
+href="https://wa.me/5531982364367?text=Olá%20Zenaide,%20gostaria%20de%20solicitar%20uma%20análise%20do%20meu%20contrato."
+target="_blank">
+SOLICITAR MINHA ANÁLISE
+</a>
+
+</div>
+
+</div>
+
+<div class="person">
+<img src="zenaide.png" alt="Zenaide Assis">
+</div>
+
+</section>
+
+<section class="cards">
+
+<div class="cards-grid">
+
+<div class="card">
+<h3>Análise Contratual</h3>
+<p>Identificação de cláusulas e encargos financeiros.</p>
+</div>
+
+<div class="card">
+<h3>Juros Excessivos</h3>
+<p>Verificação de possíveis cobranças acima do esperado.</p>
+</div>
+
+<div class="card">
+<h3>Atendimento Rápido</h3>
+<p>Envie seus documentos diretamente pelo WhatsApp.</p>
+</div>
+
+<div class="card">
+<h3>Orientação Especializada</h3>
+<p>Entenda seus direitos e possibilidades.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<h2>Descubra se você está pagando além do necessário</h2>
+
+<p>
+Fale agora com Zenaide Assis e solicite uma análise especializada.
+</p>
+
+<a class="btn"
+href="https://wa.me/5531982364367"
+target="_blank">
+FALAR NO WHATSAPP
+</a>
+
+</section>
+
+<footer>
+Zenaide Assis • Revisão Bancária • (31) 98236-4367
+</footer>
+
+<a class="whatsapp"
+href="https://wa.me/5531982364367"
+target="_blank">
+💬
+</a>
+
+</body>
+</html>
